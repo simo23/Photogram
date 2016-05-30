@@ -17,17 +17,19 @@ The libraries that have been used are:
 
 NOTE: if you want to compile this code in Android Studio you must:
 
-- import the project folder in Android Studio
+- Import the project folder in Android Studio
 
-- obtain a Telegram API key as explained in https://github.com/DrKLO/Telegram README 
+- Obtain a Telegram API key as explained in https://github.com/DrKLO/Telegram README 
 
-- obtain a Google key and the JSON file: follow the steps to "GET A CONFIGURATION FILE" at "https://developers.google.com/identity/sign-in/android/start-integrating#prerequisites" . You will need to create your own project with an arbitrary name BUT IN THE PACKAGE NAME FIELD YOU MUST USE "org.telegram.messenger" ! You will also have to download a JSON file that you must insert in the "TmessageProj" folder inside the project.
+- Obtain a Google key and the JSON file: follow the steps to "GET A CONFIGURATION FILE" at "https://developers.google.com/identity/sign-in/android/start-integrating#prerequisites" . You will need to create your own project with an arbitrary name BUT IN THE PACKAGE NAME FIELD YOU MUST USE "org.telegram.messenger" ! You will also have to download a JSON file that you must insert in the "TmessageProj" folder inside the project.
 
-- obtain an Hockey App key (https://www.hockeyapp.net)
+- Obtain an Hockey App key (https://www.hockeyapp.net)
 
-- create a keystore on your PC by going in Android Studio->Build->Generate Signed APK . Insert all the needed fields and you will generate a keystore file in a defined path.
+- Fill the correct values in src/main/java/org/telegram/messenger/BuildVars.java file
 
-- insert all the keys and the path of your keystore in the correct spots in TmessageProj/build.gradle 
+- Create a keystore on your PC by going in Android Studio->Build->Generate Signed APK . Insert all the needed fields and you will generate a keystore file in a defined path.
+
+- Insert all the keys and the path of your keystore in the correct spots in TmessageProj/build.gradle 
 
 You should be ready to go, enjoy!
 
